@@ -1,0 +1,51 @@
+	dl {
+		width: 158px;
+		margin:0px;
+	}
+	dt {
+		font-size: 14px; 
+		padding: 0px; 
+		margin: 0px; 
+		width:146px; 			/*设置宽度*/
+		height:19px; 			/*设置高度*/
+		background-image:url(../img/title_show.gif);		/*设置背景图片*/	
+		padding:6px 0px 0px 12px;
+		color:#215dc6;
+		font-size:12px;	
+		cursor:hand;
+	}
+	dd{
+		color: #000;
+		font-size: 12px;
+		margin:0px;
+	 }
+	a {
+		text-decoration: none;		/*不显示下划线*/
+	}
+	a:hover {
+		color: #FF6600;
+	}
+	#top{
+		width:158px; 			/*设置宽度*/
+		height:30px; 			/*设置高度*/
+		background-image:url(../img/top.gif);		/*设置背景图片*/		
+	}
+	#bottom{
+		width:158px; 			/*设置宽度*/
+		height:31px; 			/*设置高度*/
+		background-image:url(../img/bottom.gif);		/*设置背景图片*/				
+	}
+	.title{
+		background-image:url(../img/title_quit.gif);		/*设置背景图片*/	
+	}
+	.item{
+		width:146px; 			/*设置宽度*/
+		height:15px; 			/*设置高度*/
+		background-image:url(../img/item_bg.gif);		/*设置背景图片*/	
+		padding:6px 0px 0px 12px;
+		color:#215dc6;
+		font-size:12px;	
+		cursor:hand;
+		background-position:center;
+		background-repeat:no-repeat;
+	}

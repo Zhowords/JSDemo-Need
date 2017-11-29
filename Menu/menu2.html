@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>伸缩式导航菜单</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/menu2.css"/>
+	<script type="text/javascript" src="../js/jquery-1.6.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("dd").hide();//隐藏全部子菜单
+			$("dt[class!='title']").toggle(
+				function(){
+					//slideDown:通过高度变化（向下增长）来动态地显示所有匹配的元素
+					$(this).css("background-image","url(img/title_hide.gif)");//改变主菜单的背景
+					$(this).next().slideDown('slow');
+				},
+				function(){
+					//slideUp:通过高度变化（向下缩小）来动态地显示所有匹配的元素
+					$(this).css("background-image","url(img/title_show.gif)");//改变主菜单的背景
+					$(this).next().slideUp("slow");
+				}
+			);
+		});
+	</script>
+	<body>
+		<div id="top"></div>
+		<dl>
+			<dt>员工管理</dt>
+			<dd>
+				<div class="item">添加员工信息</div>
+        		<div class="item">管理员工信息</div>	
+			</dd>
+			<dt>招聘管理</dt>
+			<dd>
+				<div class="item">浏览应聘信息</div>
+       		 	<div class="item">添加应聘信息</div>
+        		<div class="item">浏览人才库</div>
+			</dd>
+			<dt>薪酬管理</dt>
+			<dd>
+				<div class="item">薪酬登记</div>
+        		<div class="item">薪酬调整</div>
+        		<div class="item">薪酬查询</div>
+			</dd>
+			<dt class="title"><a href="#">退出系统</a></dt>
+			
+		</dl>
+		<div id="bottom"></div>
+	</body>
+</html>

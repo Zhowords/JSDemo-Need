@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>自动隐藏式菜单</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/menu1.css"/>
+	<script type="text/javascript" src="../js/jquery-1.6.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#flag").mouseover(function(){
+				$("#menu").show(300);
+			});
+			$("#menu").hover(null,function(){
+				$("#menu").hide(300);
+			});
+		});
+	</script>
+	<body>
+		<img src="img/title.gif" width="30" height="80" id="flag"/> 
+		<div id="menu">
+			<ul>
+				<li><a href="#">图书介绍</a></li>
+				<li><a href="#">新书预告</a></li>
+				<li><a href="#">图书销售</a></li>
+   				<li><a href="#">勘误发布</a></li>
+   			 	<li><a href="#">资料下载</a></li>
+    			<li><a href="#">好书推荐</a></li>
+  				<li><a href="#">技术支持</a></li>
+    			<li><a href="#">联系我们</a></li>
+			</ul>
+			
+		</div>
+	</body>
+</html>
